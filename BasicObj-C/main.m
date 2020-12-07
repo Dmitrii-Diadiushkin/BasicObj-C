@@ -12,5 +12,12 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         NSLog(@"Hello, World!");
     }
+    int first = 0;
+    int second = 0;
+    printf("Enter first integer number: ");
+    scanf("%d", &first);
+    printf("Enter second integer number: ");
+    scanf("%d", &second);
+    printf("%d + %d = %d", first, second, first + second);
     return 0;
 }
