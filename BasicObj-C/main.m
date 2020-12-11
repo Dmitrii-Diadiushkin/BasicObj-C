@@ -36,11 +36,11 @@ void calcDiv(int a, int b) {
 int main(int argc, const char * argv[]) {
     
     //Task 1:
-//    char charToCheck[40];
-//    printf("Enter a char to check (will be checked the first char if you enter a string): ");
-//    scanf("%39s", charToCheck);
-//    NSString * charToCheckStr = [NSString stringWithUTF8String:charToCheck];
-//    checkChar(charToCheckStr);
+    char charToCheck[40];
+    printf("Enter a char to check (will be checked the first char if you enter a string): ");
+    scanf("%39s", charToCheck);
+    NSString * charToCheckStr = [NSString stringWithUTF8String:charToCheck];
+    checkChar(charToCheckStr);
     
     //Task 2:
     int a = 0;
