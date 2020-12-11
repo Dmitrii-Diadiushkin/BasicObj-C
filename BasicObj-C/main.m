@@ -17,20 +17,20 @@ void checkChar (NSString *enteredValue) {
     }
 }
 
-int calcSum(int a, int b) {
-    return a + b;
+void calcSum(int a, int b) {
+    printf("Summ of %d and %d is %d\n", a, b, a + b);
 }
 
-int calcDif(int a, int b) {
-    return a - b;
+void calcDif(int a, int b) {
+    printf("Difference of %d and %d is %d\n", a, b, a - b);
 }
 
-int calcMult(int a, int b) {
-    return a * b;
+void calcMult(int a, int b) {
+    printf("Composition of %d and %d is %d\n", a, b, a * b);
 }
 
-int calcDiv(int a, int b) {
-    return (double)a / (double)b;
+void calcDiv(int a, int b) {
+    printf("Division of %d and %d is %f\n", a, b, (double)a / (double)b);
 }
 
 int main(int argc, const char * argv[]) {
@@ -43,10 +43,9 @@ int main(int argc, const char * argv[]) {
 //    checkChar(charToCheckStr);
     
     //Task 2:
-    int a, b;
+    int a = 0;
+    int b = 0;
     char action[10];
-    
-    printf("%f", (double)(5/2));
     
     printf("Enter the first number: ");
     scanf("%d", &a);
@@ -56,19 +55,19 @@ int main(int argc, const char * argv[]) {
     scanf("%d", &b);
     switch (action[0]) {
         case '+':
-            printf("Summ of %d and %d is %d\n", a, b, calcSum(a, b));
+            calcSum(a, b);
             break;
         case '-':
-            printf("Difference of %d and %d is %d\n", a, b, calcDif(a, b));
+            calcDif(a, b);
             break;
         case '*':
-            printf("Composition of %d and %d is %d\n", a, b, calcMult(a, b));
+            calcMult(a, b);
             break;
         case '/':
-            printf("Division of %d and %d is %f\n", a, b, (double)calcDiv(a, b));
+            calcDiv(a, b);
             break;
         default:
-            printf("You've entered wrong action.");
+            printf("You've entered wrong action.\n");
             break;
     }
     
